@@ -89,15 +89,15 @@ proxy-groups:
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$"}
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(台|日|韩|港|美)).)*$"}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|韩|新|日)).)*$"}
-  - {name: 🇨🇳 台湾节点, type: select, include-all: true, filter: "(?=.*(台湾|🇹🇼|tw|taiwan|tai wan))^((?!(港|日|韩|新|深|美)).)*$"}
-  - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?=.*(韩|🇰🇷|kr|korea))^((?!(港|日|台|新|深|美)).)*$"}
+  - {name: 🇨🇳 台湾节点, type: select, include-all: true, filter: "(?=.*(台湾|🇹🇼|tw|taiwan|Taiwan))^((?!(港|日|韩|新|深|美)).)*$"}
+  - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?=.*(韩|🇰🇷|kr|korea|Korea))^((?!(港|日|台|新|深|美)).)*$"}
   - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: ♻️ 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$"}
-  - {name: ♻️ 韩国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(韩|🇰🇷|kr|korea))^((?!(港|日|台|新|深|美)).)*$"}
+  - {name: ♻️ 韩国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(韩|🇰🇷|kr|korea|Korea))^((?!(港|日|台|新|深|美)).)*$"}
   - {name: ♻️ 狮城自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(港|台|韩|日|美)).)*$"}
   - {name: ♻️ 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
-  - {name: ♻️ 台湾自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台湾|🇹🇼|tw|taiwan|tai wan))^((?!(港|日|韩|新|深|美)).)*$"}
+  - {name: ♻️ 台湾自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台湾|🇹🇼|tw|taiwan|Taiwan))^((?!(港|日|韩|新|深|美)).)*$"}
   - {name: 🌐 全部节点, type: select, include-all: true}
   - {name: 直连, type: select, proxies: [DIRECT]}
 
